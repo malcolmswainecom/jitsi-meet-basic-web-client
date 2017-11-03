@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://meet.jit.si/external_api.js"></script>
+<script>
+$(document).ready(function(){
+    var domain = "meet.jit.si";
+	var options = {
+		roomName: "JitsiMeetAPIExample",
+		width: 700,
+		height: 700,
+		parentNode: document.querySelector('#meet')
+	}
+var api = new JitsiMeetExternalAPI(domain, options);
+});
+</script>
+
+<title>Hello Node</title>
+</head>
+<body>
+<h1>Page served from Node http-server</h1>
+<div id="meet">
+	meeting
+</div>
+<p></p>
+</body>
+</html>
